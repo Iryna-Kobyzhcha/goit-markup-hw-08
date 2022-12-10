@@ -1,0 +1,32 @@
+.clients  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+width: 170px;
+height: 92px;
+border: 1px solid $clients-logo-color;
+border-radius: 4px;
+  background-color: $primary-color;
+  color: $clients-logo-color;
+
+  transition: background-color $timing-function,
+color $timing-function;
+
+&:hover,
+&:focus {
+  color: $accent-color;
+  border: 1px solid $accent-color;
+}
+}
+.clients__link {
+  fill: currentColor;
+}

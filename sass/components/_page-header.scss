@@ -1,0 +1,8 @@
+.header {
+  border-bottom: 1px solid $border-bottom-color;
+  box-shadow: $box-shadow-color;
+}
+.header__container {
+  display: flex;
+  align-items: center; 
+}

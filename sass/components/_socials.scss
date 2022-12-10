@@ -1,0 +1,41 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $primary-color;
+  color: $clients-logo-color;
+  transition: background-color $timing-function,
+color $timing-function;
+
+&:hover,
+&:focus {
+  background-color: $accent-color;
+  color: $primary-color;
+}
+}
+.socials__icon {
+  fill: currentColor;
+}
+
+.socials__link--footer {
+  color: $primary-color;
+  background: $footer-socials-bg-color;
+} 
+.socials__link:focus, 
+.socials__link:hover {
+    color: $primary-color;
+    background-color: $accent-color;
+}
+.socials__link {
+fill: currentColor;
+} 

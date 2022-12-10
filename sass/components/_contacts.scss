@@ -1,0 +1,37 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+
+    &__item {
+    margin-left: 30px;
+  }
+
+  &__envelopep {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  &__smartphone {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  
+}
+.contacts__link {
+  display: flex;
+  align-items: center;
+  color: $phone-color;
+  transition: color $timing-function;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color $timing-function;
+
+  &:hover, 
+  &:focus {
+    color: $accent-color;
+  }
+}

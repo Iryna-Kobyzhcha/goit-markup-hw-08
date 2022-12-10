@@ -1,0 +1,18 @@
+.logo {
+  color: $accent-color;
+  text-decoration: none;
+  font-family: $secondary-fons;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &__header {
+    color: $logo-color;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  &__footer {
+    color: $primary-color;
+    text-decoration: none;
+  }
+  }
+  

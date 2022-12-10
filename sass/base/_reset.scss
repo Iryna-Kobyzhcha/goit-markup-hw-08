@@ -1,0 +1,59 @@
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  
+  &__footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.section {
+  padding: 94px 0;
+}
+.section__no--padding {
+  padding-top: 0;
+  }
+  .section__style {
+    background-color: $team-section-bg-color;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+.current:after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: $accent-color;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+  animation: show $timing-function;
+  animation-fill-mode: forwards;
+}
+.current:hover::after{
+  opacity: 1;
+}

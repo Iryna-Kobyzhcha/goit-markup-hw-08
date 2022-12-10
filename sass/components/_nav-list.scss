@@ -1,0 +1,24 @@
+.nav__list {
+  display: flex;
+  margin-left: 93px;
+}
+.nav__item + .nav__item {
+  margin-left: 50px;
+}
+.nav__link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $main-color;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color $timing-function; 
+
+  &:hover,
+  &:focus{
+    color: $accent-color;
+  }
+  
+}
