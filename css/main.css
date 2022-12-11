@@ -692,7 +692,6 @@ img {
     width: calc((100% - 120px) / 4);
   }
 }
-
 @media screen and (max-width: 767px) {
   .workers__job:not(:last-child) {
     margin-bottom: 30px;
