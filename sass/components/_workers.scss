@@ -23,15 +23,13 @@
       width: calc((100% - 8 * 15px) / 4);
       // width: 270px;
 }
-  }
-.workers__job:not(:last-child) {
+  &:not(:last-child) {
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
   }
-
   .workers__image {
-    display: block;
+    // display: block;
     margin-left: auto;
     margin-right: auto;
   }
