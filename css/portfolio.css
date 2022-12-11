@@ -71,10 +71,24 @@ img {
 }
 
 .section__title {
-  color: #212121;
-  font-size: 36px;
+  font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+@media screen and (max-width: 1199px) {
+  .section__title {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .current:after {
