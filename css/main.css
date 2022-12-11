@@ -24,24 +24,6 @@ h1, h2, h3, p {
   color: currentColor;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-.container__footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -49,11 +31,21 @@ img {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .section__no--padding {
   padding-top: 0;
+}
+@media screen and (max-width: 1199px) {
+  .section__no--padding {
+    display: none;
+  }
 }
 
 .section__style {
@@ -61,6 +53,27 @@ img {
   text-align: center;
   font-size: 16px;
   line-height: 1.19;
+}
+
+.section__title--hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section__title {
+  color: #212121;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .current:after {
@@ -81,6 +94,54 @@ img {
 
 .current:hover::after {
   opacity: 1;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.container__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .header {
@@ -478,53 +539,73 @@ img {
   margin-left: 7px;
 }
 
-.section__title--hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
+@media screen and (min-width: 768px) {
+  .benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.section__title {
-  color: #212121;
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 50px;
+@media screen and (max-width: 767px) {
+  .benefits__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.benefits {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
 .benefits__list {
-  width: 270px;
+  width: 450px;
 }
-.benefits__list + .benefits__list {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
 }
+@media screen and (min-width: 1200px) {
+  .benefits__list {
+    width: calc((100% - 120px) / 4);
+  }
+}
+
 .benefits__title {
   color: #212121;
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 10px;
+  text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: start;
+  }
+}
+
 .benefits__text {
   color: #757575;
 }
+
 .benefits__icon {
-  background-color: #f5f4fa;
-  padding: 25px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 30px;
+  background-color: #f5f4fa;
+  height: 120px;
+}
+@media screen and (max-width: 767px) {
+  .benefits__icon:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .work {

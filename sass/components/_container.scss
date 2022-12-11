@@ -1,0 +1,35 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  &__footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+  
+}
+
+.container__header {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+}
