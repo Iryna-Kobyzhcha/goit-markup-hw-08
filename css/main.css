@@ -33,7 +33,7 @@ img {
 .section {
   padding: 60px 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0;
   }
@@ -663,34 +663,60 @@ img {
           transform: translate(-50%, -50%);
 }
 
-.workers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .workers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
+
 .workers__job {
   background-color: #ffffff;
-  width: 270px;
+  width: 100%;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.workers__job:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .workers__job {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .workers__job {
+    width: calc((100% - 120px) / 4);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .workers__job:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.workers__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .worker {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .worker__title {
   color: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 10px;
 }
+
 .worker__text {
   color: #757575;
 }
