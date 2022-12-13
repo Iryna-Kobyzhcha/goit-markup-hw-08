@@ -3,12 +3,11 @@
   align-items: center;
   margin-bottom: 50px;
   justify-content: center;
-
-  &__list + &__list {
-    margin-left: 8px;
-  }
 }
 
+.examples-nav__list + .examples-nav__list {
+    margin-left: 8px;
+  }
 /* блок прикладів робіт */
 .example {
   display: flex;
