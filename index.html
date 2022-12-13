@@ -15,9 +15,91 @@
 </head>
 <body>
   <!-- Шапка сайту -->
-  <!-- <header class="header">
+  <header class="header">
     <div class="header__container container">
       <a href="" lang="en" class="logo">Web<span class="logo__header">Studio</span></a>
+      
+      <button
+            class="menu-toggle menu-toggle__open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="js-open-menu__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg class="js-close-menu__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+
+            <ul class="mobile-menu list">
+              <li class="mobile-menu__item">
+                <a href="./index.html" class="link mobile-menu__link mobile-menu__link--current"
+                  >Студія</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="link mobile-menu__link">Портфоліо</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="link mobile-menu__link">Контакти</a>
+              </li>
+            </ul>
+
+            <ul class="mobile-contacts list">
+              <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="link mobile-contacts__link">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-contacts__item">
+                <a href="mailto:info@devstudio.com" class="link mobile-contacts__link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-socials list">
+              <li class="mobile-socials__item">
+                <a
+                  href="https://www.instagram.com/?hl=uk"
+                  class="mobile-socials__link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-socials__item">
+                <a
+                  href="https://twitter.com/?lang=uk"
+                  class="mobile-socials__link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mobile-socials__item">
+                <a
+                  href="https://www.facebook.com/"
+                  class="mobile-socials__link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-socials__item">
+                <a
+                  href="https://ua.linkedin.com/"
+                  class="mobile-socials__link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+
     <nav class="nav"> 
       <ul class="nav__list list">
         <li class="nav__item"><a class="nav__link link current" href="./index.html">Студія</a></li>
@@ -37,7 +119,7 @@
       </li>
     </ul>
     </div>   
-</header> -->
+</header>
   <main>
     <!--герой-->
     <!-- <section class="hero section">
@@ -123,7 +205,7 @@
     </div>
     </section> -->
     <!--співробітники-->
-    <section class="section section__style">
+    <!-- <section class="section section__style">
       <div class="container">
       <h2 class="section__title">Наша команда</h2>
       <ul class="workers list">
@@ -373,7 +455,7 @@
         </li>
       </ul>
     </div>
-    </section>
+    </section> -->
     <!-- клієнти -->
     <!-- <section class="section">
       <div class="container">
@@ -431,7 +513,7 @@
       </div>
     </section> -->
   </main>
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container container__footer">
       <div class="inform">
         <div class="footer-contacts">
@@ -517,7 +599,7 @@
 </div>
   </div>
   </div>
-  </footer>  -->
+  </footer> 
 
   <!-- <div  data-modal class="backdrop is-hidden">
     <div  class="modal">
@@ -568,6 +650,14 @@
       </form>
     </div>
     </div>  -->
+
+  <script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 </html>

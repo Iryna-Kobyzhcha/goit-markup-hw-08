@@ -15,10 +15,13 @@
 
 .btn__hero {
 min-width: 216px;;
-padding: 10px 32px;
 transition: background-color $timing-function,
 color $timing-function;
+padding: 10px 24px;
 
+  @media screen and (min-width: $desktop) {
+    padding: 10px 32px;
+  }
 &:hover,
 &:focus {
   color: $main-color;
@@ -48,6 +51,9 @@ color $timing-function;
   padding-bottom: 10px;
   min-width: 200px;
   height: 50px;
+  @media screen and (max-width: $tablet) {
+    margin-top: 20px;
+  }
 }
 
 .btn__examples-nav {

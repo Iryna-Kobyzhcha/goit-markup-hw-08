@@ -1,6 +1,12 @@
 .nav__list {
   display: flex;
-  margin-left: 93px;
+  // margin-left: 88px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 92px;
+  }
 }
 .nav__item + .nav__item {
   margin-left: 50px;
