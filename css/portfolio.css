@@ -794,7 +794,6 @@ img {
 
 .product-thumb {
   position: relative;
-  height: 294px;
   overflow: hidden;
 }
 
@@ -825,11 +824,24 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  padding: 77px 24px;
+}
+@media screen and (min-width: 768px) {
+  .product-overlay__meta {
+    padding-top: 49px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product-overlay__meta {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
 }
 
 .footer {
