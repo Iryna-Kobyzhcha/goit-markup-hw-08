@@ -8,21 +8,18 @@
     text-align: start;
   }
 }
-
 .inform {
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
   }
-  
 }
 .footer-address {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
 }
-
 .footer-contacts__address {
   color: $primary-color;
   font-style: normal;
@@ -43,16 +40,13 @@
   text-decoration: none;
   font-style: normal;
   line-height: 1.71;
-
   transition: background-color $timing-function,
   color $timing-function;
-
 &:hover,
 &:focus {
   color: $accent-color;
 }
 }
-
 .networks {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
@@ -75,7 +69,12 @@
   color: $primary-color;
   margin-bottom: 20px;
 }
-
+.subscribe {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    }
+}
 .subscribe__input {
   width: 100%;
   // max-width: 450px;
