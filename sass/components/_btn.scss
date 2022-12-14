@@ -44,6 +44,7 @@ padding: 10px 24px;
 }
 
 .btn__subscribe {
+  // display: flex;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -52,6 +53,7 @@ padding: 10px 24px;
   min-width: 200px;
   height: 50px;
   @media screen and (max-width: 1199px) {
+    margin-left: 12px;
     margin-top: 20px;
   }
 }
