@@ -77,7 +77,7 @@
 }
 
 .subscribe__input {
-  width: 450px;
+  max-width: 450px;
   @media screen and (min-width: $desktop) {
   max-width: 358px;
   }
